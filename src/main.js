@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         showError('Sorry, there are no images matching your search query. Please try again!');
         return;
       }
+console.log('Received images:', data);
 
       renderGallery(data.hits, currentPage > 1);
       totalHits = data.totalHits;
@@ -99,3 +100,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 });
+
